@@ -170,15 +170,15 @@
 		</div>
 
 		<!-- Popup -->
-		<div id="popup" style="display:none; position:fixed; top:1.5rem; left:1.5rem; z-index:10000; background:#1c1c26; border:1px solid rgba(255,255,255,0.15); border-radius:6px; padding:0.8rem 1.5rem; box-shadow:0 0 30px rgba(0,0,0,0.4); white-space:nowrap;">
-			<span class="icon solid alt fa-check" style="color:#e44c65; margin-right:0.6rem;"></span>
-			<span style="color:#fff; font-family:'Lato',sans-serif;">Email copied!</span>
+		<div id="popup" style="display:none; position:fixed; top:1rem; left:1rem; z-index:10000; background:#1c1c26; border-left:3px solid #e44c65; border-radius:4px; padding:0.5rem 1rem; box-shadow:0 0 20px rgba(0,0,0,0.5); white-space:nowrap;">
+			<span class="icon solid alt fa-check" style="color:#e44c65; margin-right:0.5rem; font-size:0.9rem;"></span>
+			<span style="color:#fff; font-family:'Lato',sans-serif; font-size:0.9rem;">Email copied!</span>
 		</div>
 		<style>
 		@keyframes slideInLeft { from { transform: translateX(-120%); opacity:0; } to { transform: translateX(0); opacity:1; } }
-		@keyframes slideOutRight { from { transform: translateX(0); opacity:1; } to { transform: translateX(120%); opacity:0; } }
+		@keyframes slideOutLeft { from { transform: translateX(0); opacity:1; } to { transform: translateX(-120%); opacity:0; } }
 		.popup-in { animation: slideInLeft 0.35s ease-out forwards; }
-		.popup-out { animation: slideOutRight 0.35s ease-in forwards; }
+		.popup-out { animation: slideOutLeft 0.35s ease-in forwards; }
 		</style>
 		<script>
 		var popupTimer;
