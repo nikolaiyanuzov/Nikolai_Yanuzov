@@ -68,16 +68,15 @@
 
 			<!-- Two -->
 				<section id="two" class="spotlight style2 right">
-					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
-					<div class="content">
+					<span class="image fit main"><img src="images/project_demo1.gif" alt="EventHub screenshot" /></span>
+					<div class="content" style="opacity: 0.9;">
 						<header>
-							<h2>TaskFlow (Monolith)</h2>
-							<p>Full-stack task management app</p>
+							<h2>EventHub (Event-Driven)</h2>
+							<p>School event registration &amp; notification system</p>
 						</header>
-						<p>A complete task management application built with PHP and JavaScript. Uses MySQL for persistence and Redis for session caching. Chose a monolithic architecture for simplicity — everything runs in a single deployable unit, making it easy to iterate on features without service coordination overhead.</p>
+						<p>Built with PHP, React, MySQL, Redis, and Docker. A RESTful API for event management with role-based auth (student/organizer), registration with confirmed/waitlist logic, and an async worker for email notifications. Chose event-driven architecture to decouple the API from notification delivery — domain events (RegistrationConfirmed, WaitlistPromoted, EventCancelled) are queued via Redis and processed by a separate worker, keeping the HTTP layer fast and the system extensible.</p>
 						<ul class="actions">
-							<li><a href="#" class="button">Live Demo</a></li>
-							<li><a href="#" class="button">GitHub</a></li>
+							<li><a href="https://github.com/dgkovachev/harp/tree/main" class="button">GitHub</a></li>
 						</ul>
 					</div>
 					<a href="#three" class="goto-next scrolly">Next</a>
@@ -85,15 +84,14 @@
 
 			<!-- Three -->
 				<section id="three" class="spotlight style3 left">
-					<span class="image fit main bottom"><img src="images/pic04.jpg" alt="" /></span>
+					<span class="image fit main bottom"><img src="#" alt="Project screenshot" /></span>
 					<div class="content">
 						<header>
-							<h2>VaultKeeper (Layered)</h2>
-							<p>Secure credential manager</p>
+							<h2>Project Name (Architecture)</h2>
+							<p>Short tagline</p>
 						</header>
-						<p>A password and credential vault built with Python and React, backed by MySQL and Docker. Uses a layered architecture — presentation, business logic, and data access are separated, making the codebase easier to test and audit for security vulnerabilities.</p>
+						<p>Built with Tech Stack. Explain why you chose this architecture and what problem it solves.</p>
 						<ul class="actions">
-							<li><a href="#" class="button">Live Demo</a></li>
 							<li><a href="#" class="button">GitHub</a></li>
 						</ul>
 					</div>
